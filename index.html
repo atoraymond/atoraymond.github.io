@@ -4,8 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <h1>Hello world</h1>
+<body class="bg-purple-50">
+    <header class="my-5">
+        <nav class="mx-auto max-w-screen-md px-5">
+            <div class="flex justify-between items-center">
+                <div class="container-fluid">
+                  <a class="font-bold text-xl cursor-pointer uppercase text-3xl">👩🏿‍💻 Ato</a>
+                </div>
+
+                <div class="flex gap-4 items-center">
+                    <a class="text-xl font-medium hover:underline" href="#">Blog</a>
+                     <a class="text-xl font-medium hover:underline" href="#">Project</a>
+                    <a class="text-xl font-medium hover:underline" href="#">Contact</a>
+                 </div>
+            </div>
+            
+        </nav>
+    </header>
+
+    <main>
+        <div class="mx-auto max-w-screen-md px-5">
+            <section>
+                <div class="md:grid md:grid-cols-2 my-10">
+                    <div>
+                        <div>
+                            <p class="px-2 py-1 bg-black inline text-white">About Me</p>
+                        </div>
+                        <div class="flex my-5">
+                            <h1 class="font-bold text-3xl">Hello! 👋🏽</h1>
+                        </div>
+                        <div>
+                            <p class=""> I am Ato Raymond, a software developer with skills in a wide range
+                            of computer science topic to name a few: Data Structures and Algorithms, web development
+                            computer networking etc. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="hidden md:block md:ml-20">
+                        <img width="200" class="rounded-full ml-20 mt-5 shadow-sm" src="./ellipse.svg" alt="image of a tree"/>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h1 class="font-bold text-3xl my-2">Latest Post</h1>
+                <div class="md:flex justify-between items-center space-y-4">
+                    <p>Documenting my journey in software development</p>
+                    <a class="hover:underline" href="#">See all post</a>
+                </div>
+            </section>
+        </div>
+    </main>
 </body>
 </html>
