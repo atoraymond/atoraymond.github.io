@@ -24,8 +24,16 @@
     <link rel="shortcut icon" href="./sankofa.svg" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
-        main{
+        .ani{
             animation: fadeIn 0.5s;
+        }
+
+        .ani2{
+            animation: fadeIn 1s;
+        }
+
+        .ani3{
+            animation: fadeIn 1.5s
         }
 
         @keyframes fadeIn {
@@ -58,13 +66,13 @@
                 <div class="md:grid md:grid-cols-2 my-10">
                     <div>
                         <div>
-                            <p class="px-2 py-1 bg-black inline text-white">About Me</p>
+                            <p class="px-2 py-1 bg-black inline text-white ani">About Me</p>
                         </div>
                         <div class="flex my-5">
-                            <h1 class="font-bold text-3xl">Hello! 👋🏽</h1>
+                            <h1 class="font-bold text-3xl ani">Hello! 👋🏽</h1>
                         </div>
                         <div>
-                            <p class=""> I am Ato Raymond, a software developer with skills in a wide range
+                            <p class="ani2"> I am Ato Raymond, a software developer with skills in a wide range
                             of computer science topic to name a few: Data Structures and Algorithms, web development
                             computer networking etc. 
                             </p>
@@ -98,7 +106,7 @@
                 </div>
             </section>
 
-            <section>
+            <section class="ani3">
                 <a href="#">
                     <div class="shadow-sm p-5 bg-white rounded-sm my-5">
                         <h2 class="font-bold">The First Website I Developed</h2>
@@ -125,7 +133,7 @@
                 </a>
             </section>
 
-            <section>
+            <section class="ani3">
                 <div class="mt-[100px]">
                     <div class="my-5">
                         <h1 class="font-bold text-3xl">My Project</h1>
@@ -142,7 +150,7 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section class="ani3">
                 <h2 class="text-xl font-bold my-5">You want to build your online Business?</h2>
                 <p>Connect with me on</p>
                 <div class="flex gap-3">
