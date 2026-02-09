@@ -23,6 +23,9 @@
     <meta property="twitter:description" content="I am a software developer that builds and ships software application">
     <meta property="twitter:image" content="https://atoraymond.github.io/ellipse.svg">
     <link rel="shortcut icon" href="./sankofa.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
         .ani{
@@ -41,113 +44,107 @@
             from {opacity: 0}
             to {opacity: 1}
         }
+        .mtp {
+            margin-top: 50px;
+        }
+        body {
+            font-family: "Tinos", serif;
+            }
     </style>
 </head>
-<body class="bg-purple-50">
-    <header class="my-5">
-        <nav class="mx-auto max-w-screen-md px-5">
-            <div class="flex justify-between items-center">
-                <div class="container-fluid">
-                  <a href="/" class="font-bold text-xl cursor-pointer uppercase text-3xl">👩🏿‍💻 Ato</a>
-                </div>
-
-                <div class="flex gap-4 items-center">
-                    <a class="text-xl font-medium hover:underline" href="/blog.html">Blog</a>
-                     <a class="text-xl font-medium hover:underline" href="#blog">Project</a>
-                    <a class="text-xl font-medium hover:underline" href="https://github.com/atoraymond">GitHub</a>
-                 </div>
-            </div>
-            
-        </nav>
-    </header>
-
-    <main>
-        <div class="mx-auto max-w-screen-md px-5">
-            <section>
-                <div class="md:grid md:grid-cols-2 my-[100px]">
-                    <div>
-                        <div>
-                            <p class="px-2 py-1 bg-black inline text-white ani">About Me</p>
-                        </div>
-                        <div class="flex my-5">
-                            <h1 class="font-bold text-3xl ani">Hello! 👋🏽</h1>
-                        </div>
-                        <div>
-                            <p class="ani2 leading-10"> I am Raymond Ghanney, a software developer with skills in a wide range
-                            of computer science topic like Data Structures and Algorithms, web development
-                            and computer networking etc. 
-                            </p>
-                        </div>
-                    </div>
-                    <div class="hidden md:block md:ml-20">
-                        <img width="200" class="rounded-full ml-20 mt-5 shadow-sm" src="./sankofa.svg" alt="image of a tree"/>
-                    </div>
-                </div>
-            </section>
-
-            <!-- <section>
-                <div>
-                    <h1 class="font-bold text-3xl">Relevant Skills</h1>
-                </div>
-                <div>
-                    <ul>
-                        <li>Java</li>
-                        <li>Typescript</li>
-                        <li>Java</li>
-                        <li>Java</li>
-                    </ul>
-                </div>
-            </section> -->
-
-            <section id="blog" class="ani3">
-                <h1 class="font-bold text-3xl my-2">Latest Post</h1>
-                <div class="md:flex justify-between items-center space-y-4">
-                    <p class="leading-10">Documenting my journey in software development</p>
-                    <a class="hover:underline" href="./blog.html">See all post</a>
-                </div>
-            </section>
-
-            <section class="ani3">
-                <a href="#">
-                    <div class="shadow-sm p-5 bg-white rounded-lg my-5">
-                        <h2 class="font-bold">The First Website I Developed</h2>
-                        <p class="font-thin">My first website how it went and how it is going</a>
-                    </div>
-                </a>
-            </section>
-
-            <section class="ani3">
-                <div class="mt-[100px]">
-                    <div class="my-5">
-                        <h1 class="font-bold text-3xl">My Project</h1>
-                        <p class="my-3">These are projects I have worked on or have been a part of</p>
-                    </div>
-                    
-                    <div class="outline outline-purple-100 bg-white rounded-t-lg p-3 cursor-pointer">
-                        <p class="uppercase font-bold">een fish farms</p>
-                        <a href="https://eenfishfarms.com" class="font-thin">A website for a fish farm</a>
-                    </div>
-                </div>
-            </section>
-            <section class="ani3 my-[100px]">
-                <h2 class="text-xl font-bold my-5">You want to build your online Business?</h2>
-                <p>Connect with me on</p>
-                <div class="flex gap-3">
-                    <a href="https://x.com/ChiefPortable" class="underline cursor-pointer">x (Twitter)</a>
-                    <p>|</p>
-                    <a href="mailto:kwamea236@protonmail.com" class="underline cursor-pointer">Primary Email</a>
-                    <p>|</p>
-                    <a href="mailto:kwamea235@protonmail.com" class="underline cursor-pointer">Secondary Mail</a>
-                </div>
-            </section>
+<body class="mx-auto max-w-screen-md px-5">
+    <div class="mtp">
+        <h1 class="text-4xl text-center uppercase font-bold">Curriculum vitae</h1>
+        <h1 class="text-4xl text-center uppercase font-bold my-5">Raymond Ato Ghanney</h1>
+        <div class="grid grid-cols-2 text-center">
+            <div>Email: <a class="text-blue-500 underline" href="#">kwamea236@protonmail.com</a> </div>
+            <div>GitHub: <a class="text-blue-500 underline" href="#">github.com/atoraymond</a></div>
+            <div>Website: <a href="#" class="text-blue-500 underline">atoraymond.github.io</a></div>
+            <div class="">Tel <a class="text-blue-500 underline" href="#"> +233 54 815 9212/20 832 6630</a></div>
         </div>
-    </main>
-    <footer class="my-10">
-        <div class="mx-auto max-w-screen-md px-5">
-            <p>&copy; 2025 | Raymond Ghanney</p>
-        </div>
-    </footer>
+    </div>
+    
 
-    <script src="./app.js"></script>
+    <div class="my-10">
+        <h2 class="uppercase text-2xl font-bold underline">Objectives</h2>
+        <p class="font-bold mt-2">System Developer or Web Developer</p>
+    </div>
+
+    <div class="my-10">
+        <h2 class="uppercase text-2xl font-bold underline">Personal Profile</h2>
+        <p class="mt-2 text-justify">Experienced software developer with a broad and adaptable skill set spanning the academia, healthcare, and printing industries. Proven ability to design and deliver efficient, scalable, and user-focused applications that solve real-world problems. Adept at working across the full software development lifecycle, from requirements analysis and system design to implementation and maintenance. Known for strong analytical thinking, attention to detail, and a collaborative approach that enables effective teamwork. Consistently driven to improve system performance, usability, and reliability while aligning technical solutions with organizational goals.</p>
+    </div>
+
+    <div class="my-10">
+        <h2 class="uppercase underline font-bold text-2xl">Educational Background</h2>
+        <p class="font-bold mt-2">Ho Technical University, Ho | Sept. 2017 - Oct. 2020</p>
+        <p>Higher National Diploma (HND) In Computer Science</p>
+        <p class="font-bold">Winneba Senior High School, Winneba | Sept. 2011 - May. 2014</p>
+        <p>West African Senior High School Certificate (Agriculture Science) </p>
+    </div>
+
+    <div class="my-10">
+        <h2 class="underline uppercase text-2xl font-bold">Working Experience</h2>
+        <div class="mt-2">
+            <table class="w-full text-left text-body">
+                <thead class="bg-neutral-secondary-soft border-b border-default">
+                    <tr>
+                        <th class="uppercase px-6 py-3">Institution</th>
+                        <th class="uppercase px-6 py-3">Portfolio</th>
+                        <th class="uppercase px-6 py-3">Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="px-6 py-3">Fast Print Services</td>
+                        <td class="px-6 py-3">Web Developer and Book Editor</td>
+                        <td class="px-6 py-3">May, 2025 - Date</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-3">Freelancing</td>
+                        <td class="px-6 py-3">Web Developer</td>
+                        <td class="px-6 py-3">Jan. 2023 - Date</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-3">University of Education, Winneba</td>
+                        <td class="px-6 py-3">National Service Personael</td>
+                        <td class="px-6 py-3">Sept. 2020 - Aug. 2021</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-3">Trauma and Specialist Hospital, Winneba</td>
+                        <td class="px-6 py-3">Internship Student</td>
+                        <td class="px-6 py-3">Jun. 2018 - Jul. 2018</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="my-10">
+        <h2 class="uppercase underline font-bold text-2xl">Relevant Skills</h2>
+        <ul class="mt-2">
+            <li>JavaScript</li>
+            <li>Java</li>
+            <li>Data Structures and Algorithms</li>
+            <li>Python</li>
+            <li>Microsoft Office</li>
+        </ul>
+    </div>
+
+    <div class="my-5">
+        <h2 class="uppercase underline font-bold text-2xl">Interest</h2>
+        <ul>
+            <li>Reading</li>
+            <li>Watching Football</li>
+            <li>Talking</li>
+        </ul>
+    </div>
+
+    <div>
+        <h2 class="uppercase underline font-bold text-2xl">Project</h2>
+        <div class="mt-2">
+            <div>Website: <a href="#">Een Fish Farms</a></div>
+        </div>
+    </div>
 </body>
 </html>
