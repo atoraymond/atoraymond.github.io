@@ -50,10 +50,28 @@
         body {
             font-family: "Tinos", serif;
             }
+
+        #sticky {
+        position: fixed; /* This makes the button stick to the viewport */
+        bottom: 20px;    /* Positions it 20 pixels from the bottom of the screen */
+        right: 20px;     /* Positions it 20 pixels from the right of the screen */
+    
+         /* Optional: additional styling */
+        background-color: #0a3f0b;
+        color: white;
+        padding: 15px 25px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 1000;   /* Ensures the button is above other content */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+
     </style>
 </head>
 <body class="mx-auto max-w-screen-md px-5">
-    <a class="px-6 py-2 bg-dark box-border border border-transparent shadow-sm" href="./index.html">Go Back</a>
+    <a id="sticky" class="px-6 py-2 bg-dark box-border border border-transparent shadow-sm" href="./index.html">Go Back</a>
     <div class="mtp">
         <h1 class="text-4xl text-center uppercase font-bold">Curriculum vitae</h1>
         <h1 class="text-4xl text-center uppercase font-bold my-5">Raymond Ato Ghanney</h1>
