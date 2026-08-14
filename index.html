@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ato Raymond | Developer</title>
-    <link rel="shortcut icon" href="./sankofa.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./logopiece.svg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -20,28 +20,66 @@
         }
         body {
             font-family: "Tinos", serif;
+        }
+
+        @keyframes slideInUp {
+            from {
+                transform: translateY(10%);
+                opacity: 0;
             }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .slide {
+            animation: slideInUp 0.5s ease-out; 
+        }
+        
     </style>
 </head>
 <body>
     <div class="p-2">
         <header class="my-5">
             <nav class="mx-auto max-w-screen-md px-5">
-                <div class="flex justify-between items-center">
-                    <div class="container-fluid">
-                    <a href="/" class="font-bold text-xl cursor-pointer uppercase text-3xl flex"> <img src="/logopiece.svg" alt="logo of piecework">  <span class="my-[30px] text-green-900">PIECE</span> <span class="my-[30px] text-orange-500">WORK</span></a>
+                <div class="md:flex md:justify-between items-center">
+                    <div class="md:flex">
+                        <div class="flex justify-center">
+                            <img width="100px" src="/logopiece.svg" alt="logo of piecework">
+                        </div>
+                        <div class="flex justify-center">
+                            <a href="/" class="font-bold text-xl cursor-pointer uppercase text-3xl flex">
+                            <span class="my-[30px] text-green-900">PIECE</span>
+                            <span class="my-[30px] text-orange-500">WORK</span>
+                            </a>
+                        </div>
                     </div>
 
-                    <div class="flex gap-10 items-center">
-                        <a class="font-bold hover:underline hover:underline-offset-8 decoration-orange-500 uppercase" href="./about/">Our Works</a>
-                        <a class="font-bold hover:underline hover:underline-offset-8 decoration-orange-500 uppercase" href="https://github.com/atoray">GitHub</a>
-                        <a class="px-6 py-2 rounded-lg bg-orange-800 upercase font-bold text-white hover:border-green-800" href="mailto:kwamea236@gmail.com">Contact</a>
+                    <div class="flex justify-center gap-5 items-center">
+                        <a class="font-bold hover:underline hover:underline-offset-8 decoration-orange-500 uppercase" href="/">Home</a>
+                        <a class="font-bold hover:underline hover:underline-offset-8 decoration-orange-500 uppercase" href="./about/">Our Work</a>
+                        <a class="font-bold hover:underline hover:underline-offset-8 decoration-orange-500 uppercase" href="./about/">Service</a>
+                        <a id="contact-hover" class="px-6 py-2 rounded-lg bg-orange-500 upercase font-bold text-white hover:border-green-800" href="mailto:kwamea236@gmail.com">Contact</a>
                     </div>
                 </div>
                 
             </nav>
         </header>
-        
+
+        <!-- pop-up -->
+        <div id="popup" class="hidden slide absolute bg-orange-200 rounded left-200 py-3 px-5 mx-auto max-w-screen-sm">
+            <div class="bg-orange-500 rounded-lg p-5">
+                <p class="text-white text-center">Call Us On</p>
+                <p class="text-white font-bold text-4xl text-center"><a href="tel:+233548159212">+233 54 815 9212</a></p> 
+            </div>
+            <div class="my-10">
+                <p class="text-center text-orange-900 mb-5">Send Us an Email on</p>
+                <p class="text-center text-orange-900"><a href="mailto:kwamea236@protonmail.com">kwamea236@protonmail.com</a></p>
+            </div>
+        </div>
+           
+
         <main>
             <div class="mx-auto max-w-screen-md px-5">
                 <section>
@@ -52,7 +90,7 @@
                                 </div>
                                 <div class="mb-[100px]">
                                     <h1 class="font-bold text-5xl ani2">
-                                        We help Small
+                                        Putting Pieces to help Small
                                         <span class="text-orange-500">&</span>
                                         Medium Scale Enterprises bring their business online 
                                     </h1>
@@ -67,7 +105,7 @@
         </main>
     </div>
 
-    <section class=" p-5 bg-orange-800">
+    <section class=" p-5 bg-orange-500">
         <div class="mx-auto max-w-screen-md px-5">
             <section>
                 <div class="my-[150px]">
@@ -81,7 +119,7 @@
                             </p>
                         </div>
                         <div class="flex mx-auto justify-center mt-10">
-                            <a class="bg-orange-600 shadow-lg rounded-lg font-bold px-10 py-2 text-white" href="./about/">More About Us</a>
+                            <a class="bg-orange-900 shadow-lg rounded-lg font-bold px-10 py-2 text-white" href="./about/">More About Us</a>
                         </div>
                     </div>
                 </div>
@@ -122,5 +160,6 @@
             <p class="text-white md:text-center">&copy; 2025 | Raymond Ato</p>
         </div>
     </footer>
+    <script src="./app.js"></script>
 </body>
 </html>
